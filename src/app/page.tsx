@@ -7,7 +7,7 @@ export const revalidate = 300;
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: APP_NAME,
+    title: <span style={{ color: '#1890ff' }}>{APP_NAME}</span>, // Changed title color to blue3
     openGraph: {
       title: APP_NAME,
       description: APP_DESCRIPTION,
@@ -20,5 +20,5 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function Home() {
-  return (<App />);
+  return (<App />); 
 }
